@@ -1,0 +1,24 @@
+.form-select {
+    border: 0px;
+    --bs-form-select-bg-img: none;
+    padding: 0rem 2.25rem 0rem 0rem;
+}
+
+.form-select:focus {
+    box-shadow: inset 0 0px 0 #FFF;
+}
+
+.btn-yellow{
+    background-color: #E5A913;
+    border: none;
+    color: white;
+}
+
+.btn-yellow:hover{
+    background-color: #B6860F;
+}
+
+.bg-praia{
+    background-position: center;
+    background-size: cover;
+}
