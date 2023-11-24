@@ -165,6 +165,46 @@ function Home() {
         </div>
       </div>
 
+      <div className="container-fluid py-2 px-5">
+        <div className="row p-5">
+          <div className="col-12 mb-2">
+          <h3>Destaques</h3>
+          </div>
+          <div className="col-3">
+            <div className="card">
+              <img src={`/assets/imgs/Florianópolis.png`} className=" card-img-top" alt="" />
+              <div className="card-body text-center">
+                <h5 className="card-title"><strong>Florianópolis</strong></h5>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="card">
+              <img src={`/assets/imgs/Rancho Queimado.png`} className=" card-img-top" alt="" />
+              <div className="card-body text-center">
+                <h5 className="card-title"><strong>Rancho Queimado</strong></h5>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="card">
+              <img src={`/assets/imgs/Santo Amaro da Imperatriz.png`} className=" card-img-top" alt="" />
+              <div className="card-body text-center">
+                <h5 className="card-title"><strong>Santo Amaro da Imperatriz</strong></h5>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="card">
+              <img src={`/assets/imgs/Palhoça.png`} className=" card-img-top" alt="" />
+              <div className="card-body text-center">
+                <h5 className="card-title"><strong>Palhoça</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Modal
         show={resultado}
         onHide={handleClose}
