@@ -100,11 +100,11 @@ const graph = {
       bus: { distance: 41, time: 397 },
       bike: { distance: 41, time: 36 },
     },
-    "Santo Amaro da Imperatriz": {
-      car: { distance: 49, time: 50 },
-      bus: { distance: 49, time: 216 },
-      bike: { distance: 49, time: 45 },
-    },
+    // "Santo Amaro da Imperatriz": {
+    //   car: { distance: 49, time: 50 },
+    //   bus: { distance: 49, time: 216 },
+    //   bike: { distance: 49, time: 45 },
+    // },
   },
 
   "São Bonifácio": {
@@ -471,11 +471,11 @@ const graph = {
       bus: { distance: 17, time: 22 },
       bike: { distance: 17, time: 62 },
     },
-    "Paulo Lopes": {
-      car: { distance: 15, time: 24 },
-      bus: { distance: 15, time: 49 },
-      bike: { distance: 15, time: 20 },
-    },
+    // "Paulo Lopes": {
+    //   car: { distance: 15, time: 24 },
+    //   bus: { distance: 15, time: 49 },
+    //   bike: { distance: 15, time: 20 },
+    // },
     "São Bonifácio": {
       car: { distance: 48, time: 55 },
       bus: { distance: 48, time: 70 },

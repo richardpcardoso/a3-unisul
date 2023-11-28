@@ -21,6 +21,19 @@ function Home() {
   const handleClose1 = () => setShow(false);
   const handleShow1 = () => setShow(true);
 
+  function combustivel(distance, vehicle){
+    let result = 0
+
+    if(vehicle == "car"){
+      result = (distance / 13)*5.49
+    }
+
+    if(vehicle == "bus"){
+      result = (distance / 3)*6.49
+    }
+
+    return result.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 });
+  }
   
   function submitForm(event) {
     event.preventDefault();
@@ -170,13 +183,14 @@ function Home() {
         </div>
       </div>
 
-      <div className="container-fluid pt-5 py-md-2 px-5">
+      <div className="container-xxl pt-5 py-md-2 px-5">
         <div className="row pt-md-5 pb-md-2">
           <div className="col-12 mb-2">
           <h3>Destaques</h3>
           </div>
           <div className="col-md-3">
             <div className="card">
+              <div className="avalicacao">★ 9,3</div>
               <img src={`/assets/imgs/Florianópolis.png`} className=" card-img-top" alt="" />
               <div className="card-body text-center">
                 <h5 className="card-title"><strong>Florianópolis</strong></h5>
@@ -185,6 +199,7 @@ function Home() {
           </div>
           <div className="col-md-3 mt-4 mt-md-0">
             <div className="card">
+              <div className="avalicacao">★ 8,7</div>
               <img src={`/assets/imgs/Rancho Queimado.png`} className=" card-img-top" alt="" />
               <div className="card-body text-center">
                 <h5 className="card-title"><strong>Rancho Queimado</strong></h5>
@@ -193,6 +208,7 @@ function Home() {
           </div>
           <div className="col-md-3 mt-4 mt-md-0">
             <div className="card">
+              <div className="avalicacao">★ 8,9</div>
               <img src={`/assets/imgs/Santo Amaro da Imperatriz.png`} className=" card-img-top" alt="" />
               <div className="card-body text-center">
                 <h5 className="card-title"><strong>Santo Amaro da Imperatriz</strong></h5>
@@ -201,6 +217,7 @@ function Home() {
           </div>
           <div className="col-md-3 mt-4 mt-md-0">
             <div className="card">
+              <div className="avalicacao">★ 8,6</div>
               <img src={`/assets/imgs/Palhoça.png`} className=" card-img-top" alt="" />
               <div className="card-body text-center">
                 <h5 className="card-title"><strong>Palhoça</strong></h5>
@@ -252,7 +269,7 @@ function Home() {
               <div className="border border-2 p-3 mt-3 rounded">
                 <h5>Valor da Viagem</h5>
 
-                <p className="mb-0 mt-3">Combustível: <strong>R$ --,-</strong></p>
+                <p className="mb-0 mt-3">Combustível: <strong>R$ {combustivel(resultado.distance, veiculo)}</strong> <small className="text-secondary">(Estimado)</small></p>
                 <p className="mb-0">Pedágio: <strong className="text-secondary">Não há pedágios nesse trajeto!</strong></p>
               </div>
 

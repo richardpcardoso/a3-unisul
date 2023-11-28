@@ -22,3 +22,14 @@
     background-position: center;
     background-size: cover;
 }
+
+.avalicacao {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    background: #FFF;
+    color:#E5A913;
+    padding: 0px 6px 1px 6px;
+    border-radius: 3px;
+    font-size: 14px;
+}
