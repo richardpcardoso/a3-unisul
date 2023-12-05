@@ -193,7 +193,7 @@ function Home() {
               <div className="avalicacao">★ 9,3</div>
               <img src={`/assets/imgs/Florianópolis.png`} className=" card-img-top" alt="" />
               <div className="card-body text-center">
-                <h5 className="card-title"><strong>Florianópolis</strong></h5>
+                <h6 className="card-title"><strong>Florianópolis</strong></h6>
               </div>
             </div>
           </div>
@@ -202,7 +202,7 @@ function Home() {
               <div className="avalicacao">★ 8,7</div>
               <img src={`/assets/imgs/Rancho Queimado.png`} className=" card-img-top" alt="" />
               <div className="card-body text-center">
-                <h5 className="card-title"><strong>Rancho Queimado</strong></h5>
+                <h6 className="card-title"><strong>Rancho Queimado</strong></h6>
               </div>
             </div>
           </div>
@@ -211,7 +211,7 @@ function Home() {
               <div className="avalicacao">★ 8,9</div>
               <img src={`/assets/imgs/Santo Amaro da Imperatriz.png`} className=" card-img-top" alt="" />
               <div className="card-body text-center">
-                <h5 className="card-title"><strong>Santo Amaro da Imperatriz</strong></h5>
+                <h6 className="card-title"><strong>Santo Amaro da Imperatriz</strong></h6>
               </div>
             </div>
           </div>
@@ -220,7 +220,7 @@ function Home() {
               <div className="avalicacao">★ 8,6</div>
               <img src={`/assets/imgs/Palhoça.png`} className=" card-img-top" alt="" />
               <div className="card-body text-center">
-                <h5 className="card-title"><strong>Palhoça</strong></h5>
+                <h6 className="card-title"><strong>Palhoça</strong></h6>
               </div>
             </div>
           </div>
