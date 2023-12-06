@@ -34,6 +34,24 @@ function Home() {
 
     return result.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 });
   }
+
+  function vehicleLabel(vehicle){
+    let result = ""
+
+    if(vehicle == "car"){
+      result = "carro"
+    }
+
+    if(vehicle == "bus"){
+      result = "ônibus"
+    }
+
+    if(vehicle == "bike"){
+      result = "bicicleta"
+    }
+
+    return result
+  }
   
   function submitForm(event) {
     event.preventDefault();
@@ -262,7 +280,7 @@ function Home() {
               <div className="border border-2 p-3 mt-3 rounded">
                 <h5>Informações</h5>
 
-                <p className="mb-0 mt-3">Indo de carro você vai levar <strong>{resultado.time} min</strong></p>
+                <p className="mb-0 mt-3">Indo de {vehicleLabel(veiculo)} você vai levar <strong>{resultado.time} min</strong></p>
                 <p className="mb-0">Distancia aproximada de  <strong>{resultado.distance} km</strong></p>
               </div>
 
